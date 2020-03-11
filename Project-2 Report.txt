@@ -11,6 +11,7 @@ Original data sources and how the data was formatted:
 	the approval process would take. Also seemed like we might not be
 	able to get exactly what we were looking for with Twitter.
 
+*Primary Key is date
 
 Transform:
 What data cleaning or transformation was required:
