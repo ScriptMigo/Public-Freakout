@@ -11,4 +11,4 @@ LEFT JOIN cases
 on cases.thisday = bud.thisday
 LEFT JOIN dow
 on dow.thisday = bud.thisday
-
+ORDER BY bud.thisday DESC
