@@ -4,16 +4,19 @@ Project Report:
 Extract:
 Original data sources and how the data was formatted:
 *Yahoo! Finance for AB stocks; csv format
+*Kaggle for daily virus reports; csv format
 *Reddit API for social media mentions; JSON format, converted to csv
 *Were going to use Twitter data, but the API required multiple freeform
 	inputs as to data usage, and there was no reference to how long
 	the approval process would take. Also seemed like we might not be
 	able to get exactly what we were looking for with Twitter.
 
+*Primary Key is date
 
 Transform:
 What data cleaning or transformation was required:
-Yahoo! Finance: dropped a few columns, renamed tables. Had to massage in excel 
+Yahoo! Finance: dropped a few columns, renamed tables. 
+Kaggle: Had to massage in excel 
 (text to columns, data format, concatenate, delimit). Groupby data, sum number of cases.
 Reddit: 1000 limit, ran loop to update/grab all data. Parse JSON, populate df. Filtered data
 to match stock data. Ouput to csv. 
